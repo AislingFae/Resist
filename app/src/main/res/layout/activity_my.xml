@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity"
+    android:id="@+id/Something">
+
+    <TextView
+        android:text="@string/Resistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ResistView"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="100dp"
+        android:textSize="50dp" />
+    <TextView
+        android:text="@string/Tolerance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TolerateView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ResistView"
+        android:textSize="50dp" />
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/ResistSpinner"
+        android:entries="@array/ResistArray"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="400dp" />
+
+
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/ResistSpinner1"
+        android:entries="@array/ResistArray"
+        android:layout_toRightOf="@+id/ResistSpinner"
+        android:layout_marginTop="400dp" />
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/ResistSpinner2"
+        android:entries="@array/ResistArray"
+        android:layout_toRightOf="@+id/ResistSpinner1"
+        android:layout_marginTop="400dp" />
+
+
+    <Spinner
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/ResistSpinner3"
+        android:entries="@array/ResistArray"
+        android:layout_toRightOf="@id/ResistSpinner2"
+        android:layout_marginTop="400dp" />
+
+
+</RelativeLayout>
