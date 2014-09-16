@@ -9,22 +9,9 @@
     tools:context=".MyActivity"
     android:id="@+id/Something">
 
-    <TextView
-        android:text="@string/Resistance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ResistView"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="100dp"
-        android:textSize="50dp" />
-    <TextView
-        android:text="@string/Tolerance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/TolerateView"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/ResistView"
-        android:textSize="50dp" />
+
+
+
 
     <Spinner
         android:layout_width="80dp"
@@ -57,9 +44,52 @@
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:id="@+id/ResistSpinner3"
-        android:entries="@array/ResistArray"
+        android:entries="@array/ToleranceArray"
         android:layout_toRightOf="@id/ResistSpinner2"
         android:layout_marginTop="400dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Digit1View"
+            android:layout_marginStart="0dp"
+            android:textSize="50dp" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Digit2View"
+            android:layout_toRightOf="@id/Digit1View"
+            android:textSize="50dp" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/multView"
+            android:layout_toRightOf="@id/Digit2View"
+            android:textSize="50dp" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TolerateView"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/multView"
+            android:textSize="50dp" />
+
+
+
+
+    </LinearLayout>
+
+
 
 
 </RelativeLayout>
